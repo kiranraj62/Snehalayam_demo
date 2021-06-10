@@ -12,8 +12,8 @@ def loginas(request):
         if u.count() > 0:
             request.session['id'] = u[0].user_id
             if u[0].user_type == 0:
-                return redirect('http://127.0.0.1:8000/home')
-    return render(request, 'home/reg.html')
+                return redirect('http://127.0.0.1:8000/')
+    return render(request, 'home/home.html')
 def register(request):
     if request.method == 'POST':
         name = request.POST.get('name')

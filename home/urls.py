@@ -22,7 +22,7 @@ app_name='home'
 
 urlpatterns = [
 
-    path('login/', views.loginas, name='loginas'),
+    path('login/', views.loginas, name='login'),
     path('', views.register, name='register'),
     path('home/', views.home, name='home'),
 ]
